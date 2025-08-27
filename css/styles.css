@@ -1,0 +1,25 @@
+/* css/styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+.sidebar {
+  width: 220px;
+  background: #2c3e50;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+.sidebar h2 { margin-bottom: 20px; }
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.sidebar li:hover { color: #1abc9c; }
+.content {
+  flex: 1;
+  padding: 20px;
+}

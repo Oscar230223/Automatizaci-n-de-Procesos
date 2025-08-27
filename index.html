@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Procesos - TDM</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>TDM Procesos</h2>
+    <ul>
+      <li onclick="cargarModulo('pedidos')">📦 Pedidos</li>
+      <li onclick="cargarModulo('nomina')">💼 Nómina</li>
+      <li onclick="cargarModulo('impuestos')">📑 Impuestos</li>
+      <li onclick="cargarModulo('flujo')">💰 Flujo de Efectivo</li>
+      <li onclick="cargarModulo('inventario')">📊 Inventario</li>
+    </ul>
+  </div>
+
+  <div class="content" id="main-content">
+    <h1>Bienvenido</h1>
+    <p>Selecciona un módulo en el menú lateral.</p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
