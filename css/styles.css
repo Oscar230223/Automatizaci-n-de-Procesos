@@ -67,3 +67,16 @@ button:hover {
 #tablaNomina td strong {
   color: green;
 }
+
+/*Diseño de Impuestos*/
+#tablaImpuestos td, #tablaImpuestos th {
+  padding: 10px;
+  text-align: center;
+}
+#tablaImpuestos th {
+  background: #8e44ad;
+  color: white;
+}
+#tablaImpuestos td strong {
+  color: darkred;
+}
