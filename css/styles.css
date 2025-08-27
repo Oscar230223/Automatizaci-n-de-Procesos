@@ -54,3 +54,16 @@ button {
 button:hover {
   background: #16a085;
 }
+
+/*Diseño de Nomina*/
+#tablaNomina td, #tablaNomina th {
+  padding: 10px;
+  text-align: center;
+}
+#tablaNomina th {
+  background: #34495e;
+  color: white;
+}
+#tablaNomina td strong {
+  color: green;
+}
