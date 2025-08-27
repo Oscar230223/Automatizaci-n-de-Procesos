@@ -1,0 +1,48 @@
+<!-- modules/flujo.html -->
+<h2>💰 Flujo de Efectivo</h2>
+
+<!-- Formulario -->
+<form id="flujoForm">
+  <label>Fecha:</label>
+  <input type="date" id="fecha" required>
+
+  <label>Concepto:</label>
+  <input type="text" id="concepto" required>
+
+  <label>Monto ($):</label>
+  <input type="number" id="monto" required step="0.01">
+
+  <label>Tipo:</label>
+  <select id="tipo" required>
+    <option value="Ingreso">Ingreso</option>
+    <option value="Egreso">Egreso</option>
+  </select>
+
+  <button type="submit">➕ Registrar</button>
+</form>
+
+<hr>
+
+<!-- Tabla de movimientos -->
+<h3>Movimientos</h3>
+<table id="tablaFlujo" border="1" cellpadding="8">
+  <thead>
+    <tr>
+      <th>Fecha</th>
+      <th>Concepto</th>
+      <th>Tipo</th>
+      <th>Monto</th>
+      <th>Acción</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<!-- Saldo -->
+<h3>Saldo Actual: <span id="saldo">$0.00</span></h3>
+
+<!-- Gráfica -->
+<canvas id="graficoFlujo" width="400" height="200"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/flujo.js"></script>

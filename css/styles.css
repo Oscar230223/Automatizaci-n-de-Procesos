@@ -80,3 +80,28 @@ button:hover {
 #tablaImpuestos td strong {
   color: darkred;
 }
+
+
+/*Diseño de Flujo de efectivo*/
+#tablaFlujo td, #tablaFlujo th {
+  padding: 10px;
+  text-align: center;
+}
+#tablaFlujo th {
+  background: #27ae60;
+  color: white;
+}
+#saldo {
+  color: darkblue;
+  font-weight: bold;
+}
+
+/*Diseño de Inventario*/
+#tablaInventario td, #tablaInventario th {
+  padding: 10px;
+  text-align: center;
+}
+#tablaInventario th {
+  background: #d35400;
+  color: white;
+}

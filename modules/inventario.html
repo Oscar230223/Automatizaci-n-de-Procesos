@@ -1,0 +1,44 @@
+<!-- modules/inventario.html -->
+<h2>📊 Inventario Físico y Contable</h2>
+
+<!-- Formulario de entrada -->
+<form id="entradaForm">
+  <h3>📥 Entrada de Equipo</h3>
+  <label>Equipo:</label>
+  <input type="text" id="equipo" required>
+
+  <label>Factura:</label>
+  <input type="text" id="factura" required>
+
+  <label>Fecha de Factura:</label>
+  <input type="date" id="fechaFactura" required>
+
+  <label>Monto ($):</label>
+  <input type="number" id="monto" required step="0.01">
+
+  <label>Cantidad:</label>
+  <input type="number" id="cantidad" required min="1">
+
+  <button type="submit">➕ Registrar Entrada</button>
+</form>
+
+<hr>
+
+<!-- Tabla de inventario -->
+<h3>Inventario Actual</h3>
+<table id="tablaInventario" border="1" cellpadding="8">
+  <thead>
+    <tr>
+      <th>Equipo</th>
+      <th>Factura</th>
+      <th>Fecha</th>
+      <th>Monto Unitario</th>
+      <th>Cantidad</th>
+      <th>Estado</th>
+      <th>Acción</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script src="js/inventario.js"></script>
