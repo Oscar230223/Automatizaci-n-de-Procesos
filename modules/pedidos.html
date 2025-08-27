@@ -1,0 +1,45 @@
+<!-- modules/pedidos.html -->
+<h2>📦 Gestión de Pedidos</h2>
+
+<!-- Formulario de registro -->
+<form id="pedidoForm">
+  <label>Nombre del Cliente:</label>
+  <input type="text" id="cliente" required>
+
+  <label>Teléfono:</label>
+  <input type="text" id="telefono" required>
+
+  <label>Correo Electrónico:</label>
+  <input type="email" id="correo" required>
+
+  <label>Producto:</label>
+  <input type="text" id="producto" required>
+
+  <label>Cantidad:</label>
+  <input type="number" id="cantidad" required min="1">
+
+  <label>Fecha de Entrega:</label>
+  <input type="date" id="fechaEntrega" required>
+
+  <button type="submit">➕ Registrar Pedido</button>
+</form>
+
+<hr>
+
+<!-- Tabla de pedidos -->
+<h3>Pedidos Registrados</h3>
+<table id="tablaPedidos" border="1" cellpadding="8">
+  <thead>
+    <tr>
+      <th>Cliente</th>
+      <th>Producto</th>
+      <th>Cantidad</th>
+      <th>Entrega</th>
+      <th>Estado</th>
+      <th>Acción</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script src="js/pedidos.js"></script>

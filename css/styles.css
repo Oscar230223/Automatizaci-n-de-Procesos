@@ -23,3 +23,34 @@ body {
   flex: 1;
   padding: 20px;
 }
+form {
+  display: grid;
+  max-width: 400px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+form input, form button, form select {
+  padding: 8px;
+  font-size: 14px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  background: #2c3e50;
+  color: white;
+}
+td, th {
+  text-align: center;
+}
+button {
+  cursor: pointer;
+  background: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+button:hover {
+  background: #16a085;
+}
